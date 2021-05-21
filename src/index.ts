@@ -6,7 +6,7 @@ import * as core from "@actions/core";
 import { getOctokit } from "@actions/github";
 import { downloadTool, extractZip } from "@actions/tool-cache";
 
-const GITHUB_USER = "OrbitalOwen";
+const GITHUB_USER = "osyrisrblx";
 const REPO_NAME = "roblox-win-installer";
 const COMMAND_TIMEOUT = 60 * 5 * 1000;
 
