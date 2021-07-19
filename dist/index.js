@@ -9769,7 +9769,7 @@ const child_process = __importStar(__webpack_require__(3129));
 const core = __importStar(__webpack_require__(2186));
 const github_1 = __webpack_require__(5438);
 const tool_cache_1 = __webpack_require__(7784);
-const GITHUB_USER = "osyrisrblx";
+const GITHUB_USER = "OrbitalOwen";
 const REPO_NAME = "roblox-win-installer";
 const COMMAND_TIMEOUT = 60 * 5 * 1000;
 const cookie = core.getInput("cookie");
@@ -9854,6 +9854,7 @@ function execCommand(command, args, cwd, timeout) {
     });
 }
 async function install() {
+    core.info("!!! THIS FORK IS DEPRECATED, PLEASE USE OrbitalOwen/roblox-win-installer-action !!!");
     const cwd = await downloadRelease();
     await execCommand("pip", ["install", "-r", "requirements.txt"], cwd);
     await execCommand(`python`, ["install.py", cookie], cwd, COMMAND_TIMEOUT);
@@ -10002,7 +10003,7 @@ module.exports = require("zlib");;
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -10015,7 +10016,7 @@ module.exports = require("zlib");;
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		var threw = true;
 /******/ 		try {
@@ -10024,14 +10025,14 @@ module.exports = require("zlib");;
 /******/ 		} finally {
 /******/ 			if(threw) delete __webpack_module_cache__[moduleId];
 /******/ 		}
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat */
-/******/ 	
+/******/
 /******/ 	__webpack_require__.ab = __dirname + "/";/************************************************************************/
 /******/ 	// module exports must be returned from runtime so entry inlining is disabled
 /******/ 	// startup

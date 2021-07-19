@@ -6,7 +6,7 @@ import * as core from "@actions/core";
 import { getOctokit } from "@actions/github";
 import { downloadTool, extractZip } from "@actions/tool-cache";
 
-const GITHUB_USER = "osyrisrblx";
+const GITHUB_USER = "OrbitalOwen";
 const REPO_NAME = "roblox-win-installer";
 const COMMAND_TIMEOUT = 60 * 5 * 1000;
 
@@ -113,6 +113,8 @@ function execCommand(
 	});
 }
 async function install() {
+	core.info("!!! THIS FORK IS DEPRECATED, PLEASE USE OrbitalOwen/roblox-win-installer-action !!!");
+
 	const cwd = await downloadRelease();
 
 	await execCommand("pip", ["install", "-r", "requirements.txt"], cwd);
